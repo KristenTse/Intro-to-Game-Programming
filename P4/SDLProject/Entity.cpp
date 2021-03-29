@@ -75,7 +75,7 @@ Entity* Entity::CheckCollisionsX(Entity* objects, int objectCount)
                 collidedRight = true;
                 return object;
             }
-            else if (velocity.x < 0) {
+            else if (velocity.x <= 0) {
                 position.x += penetrationX;
                 velocity.x = 0;
                 collidedLeft = true;
@@ -303,23 +303,6 @@ void Entity::Update(float deltaTime, Entity* player, Entity* objects, int object
             lose = true;
         }
     }
-    
-    /*
-    if (entityType == ENEMY) {
-        //CheckCollisionsY(player, 1); // set top/bottom collided booleans
-        //CheckCollisionsX(player, 1); // set left/right collided booleans
-
-        if (CheckCollision(player)) { //enemy has collided with player
-            if (collidedTop && player->velocity.y < 0) { //player has bounced on head
-                isActive = false;
-            }
-            else {
-                player->isActive = false;
-                player->lose = true;
-            }
-        }
-    }
-    */
 
     modelMatrix = glm::mat4(1.0f);
     modelMatrix = glm::translate(modelMatrix, position);
