@@ -37,11 +37,11 @@ void Scene::SpawnArrow(Entity* obj) {
     }
 
     if (obj->animIndices == obj->animUp || obj->animIndices == obj->animDown) {  //vertical arrow
-        state.arrows[idx]->height = 0.9f;
+        state.arrows[idx]->height = 0.8f;
         state.arrows[idx]->width = 0.5f;
     }
     else { //horizontal arrow
         state.arrows[idx]->height = 0.5f;
-        state.arrows[idx]->width = 0.9f;
+        state.arrows[idx]->width = 0.8f;
     }
 }

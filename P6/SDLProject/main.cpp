@@ -22,6 +22,8 @@
 #include "Level1.h"
 #include "Level2.h"
 #include "Level3.h"
+#include "Level4.h"
+#include "Level5.h"
 #include "End.h"
 
 SDL_Window* displayWindow;
@@ -31,7 +33,7 @@ ShaderProgram program;
 glm::mat4 viewMatrix, modelMatrix, projectionMatrix;
 
 Scene* currentScene;
-Scene* sceneList[6];
+Scene* sceneList[8];
 
 Effects* effects;
 
@@ -42,6 +44,7 @@ int lives = 3;
 
 Mix_Music* music;
 Mix_Chunk* shoot;
+
 
 void SwitchToScene(Scene* scene) {
     currentScene = scene;
@@ -85,7 +88,9 @@ void Initialize() {
     sceneList[2] = new Level1();
     sceneList[3] = new Level2();
     sceneList[4] = new Level3();
-    sceneList[5] = new End();
+    sceneList[5] = new Level4();
+    sceneList[6] = new Level5();
+    sceneList[7] = new End();
     SwitchToScene(sceneList[0]);
 
     //Effects
@@ -119,13 +124,13 @@ void ProcessInput() {
             case SDLK_SPACE:
                 if (currentScene != sceneList[0] && 
                     currentScene != sceneList[1] && 
-                    currentScene != sceneList[5] && 
+                    currentScene != sceneList[7] && 
                     !currentScene->state.player->lose) {
                     currentScene->SpawnArrow(currentScene->state.player);
                     Mix_PlayChannel(-1, shoot, 0);
                 }
-
                 break;
+
             case SDLK_RETURN:
                 if (currentScene == sceneList[0]) {
                     currentScene->state.nextScene = 1;
@@ -204,8 +209,9 @@ void Update() {
         }
     }
 
-    //move camera opposite to player, move up into view
+
     viewMatrix = glm::mat4(1.0f);
+
     if (currentScene == sceneList[0] || currentScene == sceneList[1]) {
         xHUD = 5;
     }
