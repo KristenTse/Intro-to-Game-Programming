@@ -40,7 +40,7 @@ Effects* effects;
 GLuint fontTextureID;
 
 float xHUD, yHUD;
-int lives = 3;
+int lives = 5;
 
 Mix_Music* music;
 Mix_Chunk* shoot;

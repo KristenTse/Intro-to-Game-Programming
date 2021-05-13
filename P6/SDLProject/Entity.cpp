@@ -296,10 +296,7 @@ void Entity::Update(float deltaTime, Entity* player, Entity* objects, int object
         Entity* objectHitY = CheckCollisionsY(objects, objectCount); // Fix if needed and get enemy if hit
         Entity* objectHitX = CheckCollisionsX(objects, objectCount); // Fix if needed and get enemy if hit
 
-        if (objectHitY != nullptr && collidedBottom) {
-            objectHitY->isActive = false;
-        }
-        else if (objectHitY != nullptr || objectHitX != nullptr) {
+        if (objectHitY != nullptr || objectHitX != nullptr) {
             hit = true;
         }
     }
