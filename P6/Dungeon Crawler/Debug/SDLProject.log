@@ -1,0 +1,6 @@
+﻿  Level3.cpp
+C:\Users\krist\Desktop\CSUY3113\P6\Dungeon Crawler\Level3.cpp(88,31): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\krist\Desktop\CSUY3113\P6\Dungeon Crawler\Level3.cpp(89,30): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\krist\Desktop\CSUY3113\P6\Dungeon Crawler\Level3.cpp(173,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\krist\Desktop\CSUY3113\P6\Dungeon Crawler\Level3.cpp(191,23): warning C4018: '<': signed/unsigned mismatch
+  SDLProject.vcxproj -> C:\Users\krist\Desktop\CSUY3113\P6\Dungeon Crawler\Debug\SDLProject.exe
