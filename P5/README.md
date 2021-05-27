@@ -14,3 +14,4 @@ Create a basic platformer game!
 - You must have at least 1 looping background music and 1 sound effect
 
 # Demo
+![P5 Demo](https://github.com/KristenTse/Intro-to-Game-Programming/blob/main/P5/Platformer.gif)
