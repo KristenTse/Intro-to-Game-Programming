@@ -10,3 +10,4 @@ Create a simplified pong game!
 - The game should stop when someone wins or loses (the ball hits a wall on the left or right)
 
 # Demo
+![P2 Demo](https://github.com/KristenTse/Intro-to-Game-Programming/blob/main/P2/Pong.gif)
