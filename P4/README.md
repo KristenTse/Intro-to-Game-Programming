@@ -11,3 +11,4 @@ Create a scene with various AI behaviors!
 - Some of your AI should be on platforms
 
 # Demo
+![P4 Demo](https://github.com/KristenTse/Intro-to-Game-Programming/blob/main/P4/Rise%20of%20the%20AI.gif)
