@@ -7,3 +7,4 @@ Create a simple 2D scene!
 - At least one object is rotating
 
 # Demo
+![P1 Demo](https://github.com/KristenTse/Intro-to-Game-Programming/blob/main/P1/2d%20Scene.gif)
