@@ -8,3 +8,4 @@ Create a minimal version of the classic Lunar Lander game!
 - If the player touches the platform, show “Mission Successful”
 
 # Demo
+![P3 Demo](https://github.com/KristenTse/Intro-to-Game-Programming/blob/main/P3/Lunar%20Lander.gif)
