@@ -10,3 +10,4 @@ Create your own game in the style of your choice!
 - Have at least 1 looping background music and 1 sound effect
 
 # Demo
+![P6 Demo](https://github.com/KristenTse/Intro-to-Game-Programming/blob/main/P6/Dungeon%20Crawler.gif)
